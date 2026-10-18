@@ -1,111 +1,280 @@
-# Lumin 
+# 🌌 LUMIN
+### Aprenda idiomas. Explore o mundo. Traduza a realidade.
 
-Aplicativo de aprendizado de idiomas com **tradução em tempo real de objetos do mundo real**.
-Este repositório contém o **site de apresentação do TCC** feito em **Laravel + Laravel Breeze** (Blade + Tailwind CSS), **sem CRUD**.
+<p align="center">
+  <img src="https://img.shields.io/badge/STATUS-EM_DESENVOLVIMENTO-9D4EDD?style=for-the-badge" alt="Status: Em desenvolvimento" />
+  <img src="https://img.shields.io/badge/PROJETO-TCC-7B2CBF?style=for-the-badge" alt="Projeto TCC" />
+  <img src="https://img.shields.io/badge/PLATAFORMA-Mobile-5A189A?style=for-the-badge" alt="Aplicativo mobile" />
+</p>
 
-> Status do projeto: **Em desenvolvimento (MVP)**
-> Repositório: https://github.com/AntonioSena0/Lumin
+<p align="center">
+  <strong>Transformando o mundo real em uma experiência de aprendizado de idiomas.</strong>
+  <br />
+  <em>Uma nova maneira de aprender vocabulário: observando, descobrindo e interagindo com o cotidiano.</em>
+</p>
 
-## Sobre o projeto
+<p align="center">
+  <a href="https://github.com/AntonioSena0/Lumin">Repositório do projeto</a>
+</p>
 
-Com a câmera do celular, o Lumin identifica objetos do mundo real em tempo real e mostra a tradução correspondente, conectando o que o usuário vê ao vocabulário de outro idioma. O objetivo é ajudar pessoas a aprender vocabulário de forma natural, usando o contexto visual do cotidiano, sem depender apenas de listas de palavras.
+---
 
-### Funcionalidades (versão atual)
+## ✨ Sobre o projeto
 
-- Câmera com detecção de objetos em tempo real
-- Identificação do objeto centralizado na tela
-- Tradução local do objeto detectado
-- Filtro para evitar múltiplas traduções ao mesmo tempo
+O **Lumin** é um aplicativo de aprendizado de idiomas que utiliza a câmera do celular para identificar objetos do mundo real e apresentar suas traduções em tempo real.
 
-### Stack principal do TCC
+A proposta é tornar o aprendizado mais **natural, visual e contextualizado**, conectando os objetos presentes no dia a dia ao vocabulário de outro idioma.
+
+Em vez de depender exclusivamente de listas de palavras e métodos tradicionais, o usuário aprende a partir daquilo que vê ao seu redor.
+
+> 💡 **Nossa ideia:** transformar qualquer ambiente em uma oportunidade de aprendizado.
+
+## 🎯 Objetivo
+
+Desenvolver uma ferramenta tecnológica que facilite a aquisição de vocabulário em outros idiomas por meio da identificação visual de objetos, aproximando o aprendizado da realidade do usuário.
+
+## 🚀 Funcionalidades do aplicativo
+
+| Funcionalidade | Descrição |
+|:---|:---|
+| 📷 **Detecção em tempo real** | Utiliza a câmera para identificar objetos do ambiente. |
+| 🎯 **Foco inteligente** | Prioriza o objeto centralizado na tela. |
+| 🌍 **Tradução de objetos** | Apresenta a tradução correspondente ao objeto identificado. |
+| ⚡ **Controle de detecções** | Evita exibir múltiplas traduções simultaneamente. |
+
+<sub>O aplicativo está em desenvolvimento e as funcionalidades podem evoluir durante a construção do MVP.</sub>
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+As tecnologias estão organizadas de acordo com suas funções no projeto.
 
 | Categoria | Tecnologias |
-|---|---|
-| Languages and Frameworks | Dart, Flutter, Java, Spring Boot |
-| Database | PostgreSQL |
-| Tools | Docker, Git |
+|:---|:---|
+| 📱 Aplicativo mobile | Dart, Flutter |
+| ⚙️ Backend / API | Java, Spring Boot |
+| 🗄️ Banco de dados | PostgreSQL |
+| 🐳 Ambiente e containers | Docker |
+| 🎨 Site de apresentação | Laravel, Blade, Tailwind CSS |
+| 🔐 Autenticação do site | Laravel Breeze |
+| 🧰 Versionamento | Git e GitHub |
 
-### Como rodar o aplicativo (TCC)
+---
 
-**API**
+# 📱 Executando o aplicativo Lumin
 
-1. Crie um arquivo `.env` dentro da pasta `api` baseado no `.env.example`.
-2. Na raiz do projeto, execute: `docker compose up --build`
+## Pré-requisitos
 
-**Mobile**
+Antes de começar, verifique se você possui:
 
-```sh
-flutter pub get          # instala as dependências
-flutter devices          # verifica se o dispositivo foi reconhecido
-flutter run              # roda no celular ou emulador
+- Flutter SDK instalado e configurado;
+- Android Studio ou ferramentas necessárias para o Android SDK;
+- Java compatível com a versão do backend;
+- Docker e Docker Compose;
+- Um dispositivo Android com depuração USB habilitada ou um emulador.
+
+## 1. Configurando a API
+
+A API é responsável pela estrutura de backend do aplicativo.
+
+**Passo 1 — Configure as variáveis de ambiente**
+
+Crie o arquivo `.env` dentro da pasta `api`, utilizando o `.env.example` como referência.
+
+**Passo 2 — Inicie os serviços**
+
+Na raiz do projeto, execute:
+
+```bash
+docker compose up --build
+```
+
+Aguarde a construção das imagens e a inicialização dos serviços.
+
+> ⚠️ Verifique se as variáveis de ambiente, as credenciais do banco e as portas estão configuradas corretamente antes de executar a API.
+
+## 2. Configurando o aplicativo mobile
+
+Entre na pasta `mobile` e execute os comandos abaixo:
+
+```bash
+# Instala as dependências do Flutter
+flutter pub get
+
+# Verifica os dispositivos disponíveis
+flutter devices
+
+# Executa o aplicativo
+flutter run
+```
+
+### Gerando o APK
+
+Para gerar uma versão de depuração do aplicativo:
+
+```bash
 flutter build apk --debug
+```
+
+O arquivo gerado normalmente estará em:
+
+```text
+build/app/outputs/flutter-apk/app-debug.apk
+```
+
+Para instalar ou atualizar o aplicativo em um dispositivo Android conectado e autorizado:
+
+```bash
 adb install -r build/app/outputs/flutter-apk/app-debug.apk
 ```
 
-Observações: a câmera depende de permissão no Android; o app detecta um objeto por vez (prioriza o centralizado); o build pode exibir aviso sobre Kotlin Gradle Plugin no plugin `ultralytics_yolo`, sem bloquear o build.
+### 📌 Observações importantes
 
-## Este site (Laravel + Breeze)
+- A câmera precisa da permissão correspondente no Android.
+- O aplicativo prioriza um objeto por vez, com foco no objeto centralizado.
+- O dispositivo deve estar autorizado para depuração USB quando a execução ocorrer por meio do ADB.
+- O plugin `ultralytics_yolo` pode apresentar avisos relacionados ao Kotlin Gradle Plugin durante a compilação. Verifique se o build realmente falhou antes de tratar o aviso como erro.
 
-### Requisitos
+---
 
-- PHP 8.3+ e Composer
-- Node.js 20+ e npm
-- Banco de dados: **SQLite** (padrão) ou MySQL
+# 💻 Site de apresentação do TCC
 
-### Instalação
+Além do aplicativo mobile, o projeto possui um site desenvolvido para apresentar o Lumin, explicar sua proposta, demonstrar suas funcionalidades e documentar os aspectos técnicos do TCC.
 
-```sh
+**Tecnologias:** Laravel + Laravel Breeze + Blade + Tailwind CSS.
+
+O site não possui CRUD próprio. Seu banco de dados é utilizado pelas funcionalidades de autenticação disponibilizadas pelo Laravel Breeze.
+
+## 📋 Requisitos do ambiente
+
+- PHP 8.3 ou superior;
+- Composer;
+- Node.js 20 ou superior;
+- npm;
+- SQLite ou MySQL.
+
+## ⚙️ Instalação e execução
+
+**1. Instale as dependências do PHP**
+
+```bash
 composer install
+```
+
+**2. Configure o ambiente**
+
+```bash
 cp .env.example .env
 php artisan key:generate
-touch database/database.sqlite     # (SQLite) — ou configure o MySQL no .env
-php artisan migrate                # cria as tabelas de usuários
+```
+
+**3. Configure o banco de dados**
+
+Para utilizar SQLite:
+
+```bash
+touch database/database.sqlite
+php artisan migrate
+```
+
+Se preferir MySQL, configure as variáveis `DB_*` no arquivo `.env` antes de executar as migrações.
+
+**4. Instale as dependências do front-end**
+
+```bash
 npm install
-npm run build                      # ou: npm run dev
+npm run build
+```
+
+Durante o desenvolvimento, você também pode utilizar:
+
+```bash
+npm run dev
+```
+
+**5. Inicie o servidor Laravel**
+
+```bash
 php artisan serve
 ```
 
-Acesse http://localhost:8000.
+## 🖥️ Estrutura do site
 
-### Front end
+| Área | Arquivo / Diretório | Descrição |
+|:---|:---|:---|
+| 🏠 Landing page | `resources/views/welcome.blade.php` | Apresentação do projeto, funcionalidades, tecnologias e equipe. |
+| 📊 Dashboard | `resources/views/dashboard.blade.php` | Demonstração técnica, protótipos, fluxo e informações do desenvolvimento. |
+| 📱 Protótipos | `public/images/screens/` | Imagens das telas desenvolvidas no Figma. |
+| 🧩 Componentes | `resources/views/components/` | Componentes Blade reutilizáveis, incluindo ícones, dispositivos e campos de senha. |
+| ⚙️ Conteúdo | `config/lumin.php` | Informações do projeto centralizadas em configuração, sem CRUD. |
+| 🎨 Estilos | `tailwind.config.js` | Configuração da identidade visual do site. |
 
-- **Landing page** — `resources/views/welcome.blade.php`: nome do projeto, sobre, funcionalidades, tecnologias, como rodar e equipe.
-- **Dashboard** — `resources/views/dashboard.blade.php` (requer login): demonstração técnica com os protótipos das telas do app (Figma), fluxo técnico, tecnologias, rotas do Breeze, como rodar e atribuições da equipe.
-- Telas do protótipo (wireframe do Figma) em `public/images/screens/` e exibidas pelo componente `<x-phone>`.
-- Componentes Blade em `resources/views/components/` (`icon`, `phone`, `password-input` e os componentes do Breeze com o visual Lumin).
-- Telas de login, cadastro e recuperação de senha seguem o wireframe (tema escuro, botões em degradê violeta → magenta).
-- Estilo: **Tailwind CSS 3** (`tailwind.config.js` com a paleta Lumin) e **Alpine.js** (menu mobile, galeria e ampliação das telas). Fonte: Poppins.
-- O conteúdo do TCC vive em um único arquivo: `config/lumin.php` (sem CRUD).
+### 🎨 Identidade visual
 
-### Back end (Laravel Breeze)
+O site utiliza uma interface com tema escuro, tipografia Poppins e uma paleta de tons violeta e magenta.
 
-O Breeze fornece as rotas e telas de autenticação:
+- **Tailwind CSS 3:** estilização e identidade visual;
+- **Alpine.js:** interações, menu mobile, galeria e ampliação dos protótipos;
+- **Laravel Breeze:** autenticação e páginas relacionadas.
 
-| Rota | Função |
-|---|---|
-| `/login` | Entrar |
-| `/register` | Criar conta |
+## 🔐 Autenticação e rotas
+
+O Laravel Breeze fornece as funcionalidades de autenticação utilizadas pelo site.
+
+| Rota | Funcionalidade |
+|:---|:---|
+| `/login` | Login de usuários |
+| `/register` | Cadastro de usuários |
 | `/forgot-password` | Recuperação de senha |
-| `/dashboard` | Painel de controle (autenticado) |
+| `/dashboard` | Painel de demonstração, com autenticação |
 | `/profile` | Perfil do usuário |
 
-Não há CRUD próprio: o único banco usado é o das tabelas de usuários criadas pelas migrações.
+**Importante:** o site não implementa CRUD de alunos, cursos ou outros recursos. As tabelas utilizadas são as relacionadas à autenticação e ao perfil do usuário, conforme as migrações presentes no projeto.
 
-### Figma
+---
 
-Defina o link do protótipo em `.env`:
+## 🎨 Protótipo no Figma
 
-```
+Os protótipos das telas do Lumin ajudam a visualizar a experiência do usuário antes da implementação completa.
+
+Para configurar o link do protótipo, adicione a variável abaixo ao arquivo `.env`:
+
+```env
 LUMIN_FIGMA_URL=https://www.figma.com/...
 ```
 
-## Equipe e atribuições
+Substitua o endereço de exemplo pelo link real do protótipo da equipe.
 
-| Aluno | GitHub | Atribuição no Laravel |
-|---|---|---|
-| Antonio Sena | [/AntonioSena0](https://github.com/AntonioSena0) | _preencher_ |
-| Arthur Gutemberg | [/ArthurGutemberg9](https://github.com/ArthurGutemberg9) | _preencher_ |
-| Beatriz Galdino | [/Beatriz1S05](https://github.com/Beatriz1S05) | _preencher_ |
-| Giovanna Torres | [/GiT0rres](https://github.com/GiT0rres) | _preencher_ |
+---
 
-(Edite também o campo `role` de cada aluno em `config/lumin.php` para aparecer no dashboard.)
+## 👥 Equipe de desenvolvimento
+
+Conheça as pessoas envolvidas no desenvolvimento do Lumin e suas atribuições no site de apresentação.
+
+| Integrante | GitHub | Atribuição |
+|:---|:---|:---|
+| **Antonio Sena** | [@AntonioSena0](https://github.com/AntonioSena0) | Back-end |
+| **Arthur Gutemberg** | [@ArthurGutemberg9](https://github.com/ArthurGutemberg9) | A definir |
+| **Beatriz Galdino** | [@Beatriz1S05](https://github.com/Beatriz1S05) | Wireframe e Front-end |
+| **Giovanna Torres** | [@GiT0rres](https://github.com/GiT0rres) | A definir |
+
+<sub>As atribuições marcadas como “A definir” devem ser atualizadas conforme a divisão oficial de responsabilidades da equipe.</sub>
+
+---
+
+## 🌟 Nossa visão
+
+Acreditamos que aprender um novo idioma pode ir além de decorar palavras.
+
+Com o Lumin, queremos aproximar a tecnologia da rotina das pessoas e transformar situações comuns em oportunidades de descoberta, curiosidade e aprendizado.
+
+**Lumin — o mundo ao seu redor também pode ensinar.**
+
+---
+
+<p align="center">
+  Desenvolvido com 💜 pela equipe Lumin
+  <br />
+  <sub>Projeto de Trabalho de Conclusão de Curso (TCC)</sub>
+</p>
