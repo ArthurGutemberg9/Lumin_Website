@@ -1,4 +1,4 @@
-# Lumin — O mundo é o seu melhor dicionário
+# Lumin 
 
 Aplicativo de aprendizado de idiomas com **tradução em tempo real de objetos do mundo real**.
 Este repositório contém o **site de apresentação do TCC** feito em **Laravel + Laravel Breeze** (Blade + Tailwind CSS), **sem CRUD**.
