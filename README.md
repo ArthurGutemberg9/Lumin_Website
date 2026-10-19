@@ -82,6 +82,10 @@ A API é responsável pela estrutura de backend do aplicativo.
 
 Crie o arquivo `.env` dentro da pasta `api`, utilizando o `.env.example` como referência.
 
+```shell
+copy .env.example .env
+```
+
 **Passo 2 — Inicie os serviços**
 
 Na raiz do projeto, execute:
@@ -169,6 +173,12 @@ cp .env.example .env
 php artisan key:generate
 ```
 
+ou
+
+```shell
+php artisan key:generate
+````
+
 **3. Configure o banco de dados**
 
 Para utilizar SQLite:
@@ -178,8 +188,6 @@ touch database/database.sqlite
 php artisan migrate
 ```
 
-Se preferir MySQL, configure as variáveis `DB_*` no arquivo `.env` antes de executar as migrações.
-
 **4. Instale as dependências do front-end**
 
 ```bash
@@ -187,16 +195,16 @@ npm install
 npm run build
 ```
 
-Durante o desenvolvimento, você também pode utilizar:
+**5. Inicie a aplicação**
 
 ```bash
-npm run dev
+composer run dev
 ```
 
-**5. Inicie o servidor Laravel**
+**6. Utilizar seeders**
 
 ```bash
-php artisan serve
+php artisan db:seed
 ```
 
 ## 🖥️ Estrutura do site
@@ -234,20 +242,6 @@ O Laravel Breeze fornece as funcionalidades de autenticação utilizadas pelo si
 
 ---
 
-## 🎨 Protótipo no Figma
-
-Os protótipos das telas do Lumin ajudam a visualizar a experiência do usuário antes da implementação completa.
-
-Para configurar o link do protótipo, adicione a variável abaixo ao arquivo `.env`:
-
-```env
-LUMIN_FIGMA_URL=https://www.figma.com/...
-```
-
-Substitua o endereço de exemplo pelo link real do protótipo da equipe.
-
----
-
 ## 👥 Equipe de desenvolvimento
 
 Conheça as pessoas envolvidas no desenvolvimento do Lumin e suas atribuições no site de apresentação.
@@ -259,7 +253,7 @@ Conheça as pessoas envolvidas no desenvolvimento do Lumin e suas atribuições 
 | **Beatriz Galdino** | [@Beatriz1S05](https://github.com/Beatriz1S05) | Wireframe e Front-end |
 | **Giovanna Torres** | [@GiT0rres](https://github.com/GiT0rres) | A definir |
 
-<sub>As atribuições marcadas como “A definir” devem ser atualizadas conforme a divisão oficial de responsabilidades da equipe.</sub>
+<sub>As atribuições marcadas como “A definir” vão ser atualizadas conforme a divisão oficial de responsabilidades da equipe.</sub>
 
 ---
 
