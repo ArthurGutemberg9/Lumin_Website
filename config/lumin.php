@@ -77,7 +77,7 @@ return [
     'team' => [
         ['name' => 'Antonio Sena', 'handle' => 'AntonioSena0', 'linkedin' => 'https://www.linkedin.com/in/antonio-sena-neto', 'initials' => 'AS', 'photo' => 'images/team/antonio.webp', 'role' => null],
         ['name' => 'Arthur Gutemberg', 'handle' => 'ArthurGutemberg9', 'linkedin' => 'https://www.linkedin.com/in/arthur-g-83247b3b2', 'initials' => 'AG', 'photo' => 'images/team/arthur.webp', 'role' => null],
-        ['name' => 'Beatriz Galdino', 'handle' => 'Beatriz1S05', 'linkedin' => 'https://www.linkedin.com/in/beatriz-galdino-torres-1b7024307', 'initials' => 'BG', 'photo' => 'images/team/beatriz.webp', 'role' => null],
+        ['name' => 'Beatriz Galdino', 'handle' => 'Beatriz1505', 'linkedin' => 'https://www.linkedin.com/in/beatriz-galdino-torres-1b7024307', 'initials' => 'BG', 'photo' => 'images/team/beatriz.webp', 'role' => null],
         ['name' => 'Giovanna Torres', 'handle' => 'GiT0rres', 'linkedin' => 'https://www.linkedin.com/in/giovanna--torres', 'initials' => 'GT', 'photo' => 'images/team/giovanna.webp', 'role' => null],
     ],
 
