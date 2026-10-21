@@ -75,10 +75,10 @@ return [
      | em Laravel (exigência da entrega: mostrar no vídeo e no GitHub).
      */
     'team' => [
-        ['name' => 'Antonio Sena', 'handle' => 'AntonioSena0', 'linkedin' => 'https://www.linkedin.com/in/antonio-sena-neto', 'initials' => 'AS', 'photo' => 'images/team/antonio.webp', 'role' => null],
-        ['name' => 'Arthur Gutemberg', 'handle' => 'ArthurGutemberg9', 'linkedin' => 'https://www.linkedin.com/in/arthur-g-83247b3b2', 'initials' => 'AG', 'photo' => 'images/team/arthur.webp', 'role' => null],
-        ['name' => 'Beatriz Galdino', 'handle' => 'Beatriz1505', 'linkedin' => 'https://www.linkedin.com/in/beatriz-galdino-torres-1b7024307', 'initials' => 'BG', 'photo' => 'images/team/beatriz.webp', 'role' => null],
-        ['name' => 'Giovanna Torres', 'handle' => 'GiT0rres', 'linkedin' => 'https://www.linkedin.com/in/giovanna--torres', 'initials' => 'GT', 'photo' => 'images/team/giovanna.webp', 'role' => null],
+        ['name' => 'Antonio Sena', 'handle' => 'AntonioSena0', 'linkedin' => 'https://www.linkedin.com/in/antonio-sena-neto', 'initials' => 'AS', 'photo' => 'images/team/antonio.webp', 'role' => 'Back-end do Lumin e contribuição para a demonstração do Seeder no site Laravel.'],
+        ['name' => 'Arthur Gutemberg', 'handle' => 'ArthurGutemberg9', 'linkedin' => 'https://www.linkedin.com/in/arthur-g-83247b3b2', 'initials' => 'AG', 'photo' => 'images/team/arthur.webp', 'role' => 'Desenvolvimento do back-end Laravel e gravação/edição do vídeo de demonstração.'],
+        ['name' => 'Beatriz Galdino', 'handle' => 'Beatriz1505', 'linkedin' => 'https://www.linkedin.com/in/beatriz-galdino-torres-1b7024307', 'initials' => 'BG', 'photo' => 'images/team/beatriz.webp', 'role' => 'Wireframes do Figma e desenvolvimento do front-end.'],
+        ['name' => 'Giovanna Torres', 'handle' => 'GiT0rres', 'linkedin' => 'https://www.linkedin.com/in/giovanna--torres', 'initials' => 'GT', 'photo' => 'images/team/giovanna.webp', 'role' => 'Implementação da interface e do front-end do site Laravel.'],
     ],
 
     // Protótipos: telas do wireframe no Figma (public/images/screens/*.webp).

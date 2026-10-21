@@ -244,16 +244,16 @@ O Laravel Breeze fornece as funcionalidades de autenticação utilizadas pelo si
 
 ## 👥 Equipe de desenvolvimento
 
-Conheça as pessoas envolvidas no desenvolvimento do Lumin e suas atribuições no site de apresentação.
+Conheça as pessoas envolvidas no desenvolvimento do Lumin e suas atribuições no aplicativo e no site Laravel.
 
 | Integrante | GitHub | Atribuição |
 |:---|:---|:---|
-| **Antonio Sena** | [@AntonioSena0](https://github.com/AntonioSena0) | Back-end |
-| **Arthur Gutemberg** | [@ArthurGutemberg9](https://github.com/ArthurGutemberg9) | A definir |
-| **Beatriz Galdino** | [@Beatriz1S05](https://github.com/Beatriz1S05) | Wireframe e Front-end |
-| **Giovanna Torres** | [@GiT0rres](https://github.com/GiT0rres) | A definir |
+| **Antonio Sena** | [@AntonioSena0](https://github.com/AntonioSena0) | Back-end do Lumin e contribuição para a demonstração do Seeder no site Laravel |
+| **Arthur Gutemberg** | [@ArthurGutemberg9](https://github.com/ArthurGutemberg9) | Desenvolvimento do back-end Laravel e gravação/edição do vídeo de demonstração |
+| **Beatriz Galdino** | [@Beatriz1S05](https://github.com/Beatriz1S05) | Wireframes do Figma e desenvolvimento do front-end |
+| **Giovanna Torres** | [@GiT0rres](https://github.com/GiT0rres) | Implementação da interface e do front-end do site Laravel |
 
-<sub>As atribuições marcadas como “A definir” vão ser atualizadas conforme a divisão oficial de responsabilidades da equipe.</sub>
+<sub>A divisão acima identifica as contribuições de cada integrante no aplicativo, no site Laravel e na demonstração desta entrega.</sub>
 
 ---
 
